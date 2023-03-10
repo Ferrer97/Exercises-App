@@ -4,14 +4,12 @@ import { Footer, Navbar } from "./";
 
 export const Layout = () => {
   return (
-    <>
-      <Box>
-        <Navbar />
-        <main>
-          <Outlet />
-        </main>
-        <Footer />
-      </Box>
-    </>
+    <Box>
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </Box>
   );
 };
