@@ -1,6 +1,9 @@
 import { Autocomplete, createFilterOptions, TextField } from "@mui/material";
+import { useGlobalContext } from "../hooks/useGlobalContext";
 
 export const Filter = () => {
+  const {exercises } = useGlobalContext();
+  console.log(exercises);
   const exercisesOption = [
     {
       bodyPart: "back",
