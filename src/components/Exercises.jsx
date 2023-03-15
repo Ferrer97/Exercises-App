@@ -1,10 +1,7 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { Filter } from "./";
-import { useGlobalContext } from "../hooks/useGlobalContext";
 
 export const Exercises = () => {
-  // const { exercises } = useGlobalContext();
-  // console.log(exercises);
   return (
     <Stack alignItems={"center"} justifyContent={"center"}>
       <Typography variant="h4" align="center" sx={{ fontWeight: "500" }}>
