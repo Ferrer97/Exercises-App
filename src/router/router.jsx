@@ -1,17 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../components/Layout";
-import { HomePage } from "../pages/HomePage";
+import { HomePage, SingleExercisePage } from "../pages";
 
- export const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout/>,
-    children : [
+    element: <Layout />,
+    children: [
       {
-        index : true,
-        element : <HomePage/>
-      }
-    ]
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: "/:id",
+        element: <SingleExercisePage />,
+      },
+    ],
   },
 ]);
-

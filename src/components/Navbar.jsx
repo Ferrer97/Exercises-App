@@ -11,10 +11,10 @@ export const Navbar = () => {
           <LinkedIn sx={{ cursor: "pointer" }} />
         </Stack>
         <Stack direction="row" spacing={2}>
-          <Link href="#" sx={{ color: "#FFF" }}>
+          <Link href="#home" sx={{ color: "#FFF" }}>
             Home
           </Link>
-          <Link href="#" sx={{ color: "#FFF" }}>
+          <Link href="#exercise" sx={{ color: "#FFF" }}>
             Exercises
           </Link>
         </Stack>

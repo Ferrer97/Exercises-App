@@ -2,6 +2,7 @@ import { Box, Button, Grid, Stack, Typography } from "@mui/material";
 export const Banner = () => {
   return (
     <Box
+      id="home"
       display="grid"
       gridTemplateColumns="repeat(12, 1fr)"
       gap={2}
@@ -13,7 +14,7 @@ export const Banner = () => {
         gridColumn="span 5"
         sx={{ gridColumn: { xs: "span 12", sm: "span 6", md: "span 5" } }}
       >
-        <Stack spacing={2} alignItems="center" justifyContent={'center'}>
+        <Stack spacing={2} alignItems="center" justifyContent={"center"}>
           <Typography align="center" variant="h5" sx={{ fontWeight: 700 }}>
             Find all the exercises you need
           </Typography>

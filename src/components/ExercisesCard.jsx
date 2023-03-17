@@ -5,10 +5,18 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
-export const ExercisesCard = ({exercise}) => {
+export const ExercisesCard = ({ exercise }) => {
+  const navigate = useNavigate();
+  const handleClick = (id) => {
+    navigate(`/${id}`);
+  };
   return (
-    <Card sx={{ maxWidth: 235, display : 'inline-block',}} >
+    <Card
+      onClick={() => handleClick(exercise.id)}
+      sx={{ maxWidth: 235, display: "inline-block" }}
+    >
       <CardActionArea>
         <CardMedia
           component="img"
